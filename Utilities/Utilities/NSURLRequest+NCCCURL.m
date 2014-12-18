@@ -35,7 +35,7 @@
     if (body) {
         body = [NSString stringWithFormat:@"-d \'%@\'", body];
     }
-    NSString *curlRequest = [NSString stringWithFormat:@"curl -v \\\n%@-X %@ \\\n%@ \\\n'%@'", headers, (self.HTTPMethod), body, self.URL];
+    NSString *curlRequest = [NSString stringWithFormat:@"curl -v \\\n%@-X %@ \\\n%@ \\\n'%@'", headers, (self.HTTPMethod), body, [self.URL absoluteString]];
     
     return curlRequest;
 }
