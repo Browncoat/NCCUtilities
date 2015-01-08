@@ -22,7 +22,7 @@
 
 #import "NSString+Validation.h"
 
-#define VALIDATION_ERROR_DOMAIN @"com.validation.paperwoven"
+#define VALIDATION_ERROR_DOMAIN @"com.validation"
 
 typedef NS_ENUM(NSInteger, StringValidationErrorCode) {
     StringValidationErrorCodeDefault,
