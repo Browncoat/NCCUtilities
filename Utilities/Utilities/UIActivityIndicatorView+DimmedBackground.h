@@ -1,4 +1,4 @@
-// UITextField+NCCInputAccessoryView.h
+// NCCUtilities_h
 //
 // Copyright (c) 2013-2014 NCCCoreDataClient (http://coredataclient.com)
 //
@@ -22,22 +22,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol UITextFieldNCCInputAccessoryViewDelegate;
+@interface UIActivityIndicatorView (DimmedBackground)
 
-@interface UITextField (NCCInputAccessoryView)
-
-@property (nonatomic, assign) id <UITextFieldNCCInputAccessoryViewDelegate> inputAccessoryDelegate;
-
-// Add this method in textFieldShouldBeginEditing:
-- (void)addResponderChainInputAccessoryView;
-- (void)next;
-- (void)previous;
-
-@end
-
-@protocol UITextFieldNCCInputAccessoryViewDelegate <NSObject>
-
-- (BOOL)textFieldShouldSelectNextResponder:(UITextField *)textField;
-- (BOOL)textFieldShouldSelectPreviousResponder:(UITextField *)textField;
++ (void)show;
++ (void)hide;
 
 @end

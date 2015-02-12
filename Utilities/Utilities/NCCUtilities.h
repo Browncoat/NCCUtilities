@@ -38,5 +38,6 @@
 #import "UITableView+NCCHelpers.h"
 #import "UITextField+NCCInputAccessoryView.h"
 #import "UITextField+NCCResponderChain.h"
+#import "UIActivityIndicatorView+DimmedBackground.h"
 
 #endif
