@@ -25,18 +25,15 @@
 
 @implementation UIImageView (NCCDownload)
 
+/*
 - (void)cancelImageDownload
 {
-    [self.client cancelRequest];
     [self hideLoadingIndicator];
 }
-
+*/
 - (void)loadImageFromUrl:(NSString *)url fallback:(UIImage *)fallback fadeIn:(BOOL)shouldFadeIn completion:(DownloadComplete)completion
 {
-    if (!self.client) {
-        self.client = [[NCCHTTPClient alloc] init];
-    }
-    [self cancelImageDownload];
+//    [self cancelImageDownload];
     self.image = nil;
     self.fallbackImage = fallback;
     self.shouldFadeIn = shouldFadeIn;

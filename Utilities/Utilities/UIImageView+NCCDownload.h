@@ -26,7 +26,6 @@ typedef void(^DownloadComplete)(NSError *error);
 
 @interface UIImageView (NCCDownload)
 
-- (void)cancelImageDownload;
 - (void)loadImageFromUrl:(NSString *)url fallback:(UIImage *)fallback fadeIn:(BOOL)shouldFadeIn completion:(DownloadComplete)completion;
 
 @end
